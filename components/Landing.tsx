@@ -1,4 +1,7 @@
 import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { Button } from "./ui/button";
+
+
 
 export default function Landing() {
     const socials = [
@@ -75,13 +78,9 @@ export default function Landing() {
           </a>
           </div>
 
-          <a
-            href="/resume.pdf"
-            className="mt-8 inline-flex items-center justify-center rounded-full
-                       px-5 py-3 text-white bg-black hover:opacity-90"
-          >
-            Resume
-          </a>
+          <Button variant="outline" className="mt-8 bg-black text-white px-8 py-6  font-medium text-lg hover:bg-gray-800 transition-colors duration-200">
+            <a href="/resume.pdf">Resume</a>
+          </Button>
         </div>
       </section>
     </main>
